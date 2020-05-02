@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Apr 2020 pada 08.14
+-- Waktu pembuatan: 02 Bulan Mei 2020 pada 16.37
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.9
 
@@ -40,8 +40,7 @@ CREATE TABLE `t_datapelanggaran` (
 --
 
 INSERT INTO `t_datapelanggaran` (`no_data`, `nis`, `no_pelanggaran`, `id_petugas`) VALUES
-(3, '1819117642', '002', '112'),
-(4, '1819117641', '001', '111');
+(1, '1819117641', '001', '111');
 
 -- --------------------------------------------------------
 
@@ -82,7 +81,7 @@ CREATE TABLE `t_pelanggaran` (
 --
 
 INSERT INTO `t_pelanggaran` (`no_pelanggaran`, `jenis_pelanggaran`, `poin_pelanggaran`) VALUES
-('001', 'Keterlambatan', 10),
+('001', 'Terlambat datang ke sekolah', 10),
 ('002', 'Sepatu tidak sesuai aturan', 5),
 ('003', 'Celana/rok tidak sesuai aturan', 5),
 ('004', 'Rambut tidak sesuai aturan', 5),
@@ -209,7 +208,7 @@ ALTER TABLE `t_siswa`
 -- AUTO_INCREMENT untuk tabel `t_datapelanggaran`
 --
 ALTER TABLE `t_datapelanggaran`
-  MODIFY `no_data` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `no_data` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
