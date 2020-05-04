@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Bulan Mei 2020 pada 16.37
+-- Waktu pembuatan: 04 Bulan Mei 2020 pada 08.15
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.9
 
@@ -34,13 +34,6 @@ CREATE TABLE `t_datapelanggaran` (
   `no_pelanggaran` varchar(10) NOT NULL,
   `id_petugas` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `t_datapelanggaran`
---
-
-INSERT INTO `t_datapelanggaran` (`no_data`, `nis`, `no_pelanggaran`, `id_petugas`) VALUES
-(1, '1819117641', '001', '111');
 
 -- --------------------------------------------------------
 
@@ -106,9 +99,9 @@ CREATE TABLE `t_petugas` (
 INSERT INTO `t_petugas` (`id_petugas`, `nama_petugas`, `username`) VALUES
 ('111', 'Kusmoro Rusli S.Pd', 'elrusliano'),
 ('112', 'Shinta Puspitasari S.Pd', 'shintapuspitasar'),
-('113', 'Neneng Herawati M.P.d', 'nenengherawati'),
+('113', 'Neneng Herawati M.Pd', 'nenengherawati'),
 ('114', 'Agus Sunandar S.St', 'agussunandarr'),
-('115', 'Soleh Sodikin S.Pd.,M.M.Pd', 'solehsodikin');
+('115', 'Soleh Sodikin S.Pd., M.M.Pd', 'solehsodikin');
 
 -- --------------------------------------------------------
 
@@ -208,7 +201,7 @@ ALTER TABLE `t_siswa`
 -- AUTO_INCREMENT untuk tabel `t_datapelanggaran`
 --
 ALTER TABLE `t_datapelanggaran`
-  MODIFY `no_data` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `no_data` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
